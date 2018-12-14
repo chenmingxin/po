@@ -25,7 +25,6 @@ class TestLogin():
     @allure.step("实例化")
     def setup_class(self):
         self.test = PageLogin(get_driver())
-        # PageIn().page_in()
 
     @allure.step("关闭")
     def teardown_class(self):
