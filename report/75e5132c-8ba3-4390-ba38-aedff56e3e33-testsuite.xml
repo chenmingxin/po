@@ -1,0 +1,54 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1544753926792" stop="1544753955290">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1544753926792" status="failed" stop="1544753955290">
+      <name>TestLogin.testlogin[18012341234-111111]</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_login.TestLogin object at 0x0000000004008BA8&gt;, username = '18012341234', pwd = '111111'
+
+    @pytest.mark.parametrize("username,pwd",get_data())
+    @allure.step("登录步骤")
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    def testlogin(self,username,pwd):
+        allure.attach("描述:","输入用户名")
+        self.test.page_input_username(username)
+        allure.attach("描述:","输入密码")
+        self.test.page_input_pwd(pwd)
+        allure.attach("描述:","点击登录")
+        self.test.page_click_btn()
+&gt;       assert 0
+E       assert 0
+
+scripts\test_login.py:47: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="4908-MainThread"/>
+        <label name="host" value="PC-20180829KPER"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753926799" status="passed" stop="1544753937889">
+          <name>实例化</name>
+          <title>实例化</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1544753937890" status="failed" stop="1544753955116">
+          <name>登录步骤</name>
+          <title>登录步骤</title>
+          <attachments>
+            <attachment source="232474b3-aeaf-4a54-9e6d-557e60e95854-attachment.txt" title="描述:" type="text/plain"/>
+            <attachment source="bf22986c-3597-44da-846d-a24286dce79e-attachment.txt" title="描述:" type="text/plain"/>
+            <attachment source="1cd55e0a-db8f-460b-a87e-fe641f9a4429-attachment.txt" title="描述:" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
